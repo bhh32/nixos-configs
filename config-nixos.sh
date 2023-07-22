@@ -7,6 +7,8 @@ then
     type="generic"
 fi
 
+nix-env --install wget
+
 if [ ${type} ==  "generic" ]
 then
     wget https://raw.githubusercontent.com/bhh32/nixos-configs/main/config-files/non-nvidia-non-dev-configuration.nix
